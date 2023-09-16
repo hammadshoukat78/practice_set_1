@@ -1,0 +1,202 @@
+/* Add Font Awesome library for icons */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css');
+
+* {
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #555555;
+}
+
+#top-line {
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: space-between;
+    height: 34px;
+    align-items: center;
+}
+
+.top-right {
+    margin-right: 30px;
+}
+
+.top-left {
+    margin-left: 30px;
+}
+.top-left ol li i {
+    color: #9e9c9c;
+}
+
+.top-right ol li i{
+    color: #9e9c9c;
+    font-size: 16px;
+}
+
+ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ol li {
+    display: inline-block;
+    align-items: center;
+    font-size: 12px;
+   
+    padding-inline: 10px;
+    color: #555555;
+}
+
+ol li i {
+    margin-right: 5px; /* Add space between the icon and text */
+}
+
+.top-right li:not(:last-child) {
+    border-right: 1px solid #ccc; /* Add a right border to separate items */
+    padding-right: 10px; /* Optional: Add space between items */
+}
+
+.top-right ol li i:hover {
+    color: rgb(112, 152, 212);
+}
+
+.nav-bar {
+    height: 95px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 242.5px;
+    height: 85px;
+    margin: 0 auto;
+    margin-left: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logo image {
+    padding-left: 5px;
+}
+.nav-content {
+    flex-grow: 0.60; /* Allow the .nav-content to grow and take available space */
+    margin-right: 30px;
+    display: flex; /* Use flex layout for .nav-content */
+    align-items: center; /* Vertically center the list items */
+    justify-content: flex-end; /* Align list items to the right */
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    width: 100%; /* Occupy the entire width of .nav-content */
+}
+
+.nav-bar li {
+    font-size: 16px;
+}
+
+.container {
+    width: 100%;
+}
+.carousel {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.main-div {
+    height: 100%;
+    display: flex;
+    width: 300%;
+    animation: slide 3s linear 3s infinite normal;
+}
+@keyframes slide {
+    0% {
+        transform: translateX(0%);
+    }
+    33.33% {
+        transform: translateX(-100%);
+    }
+    66.66% {
+        transform: translateX(-200%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+.main-div section {
+    flex-basis: 100%;
+}
+.slider-1 {
+    /* width: 100%; */
+    display: flex;
+    height: 400px;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('img2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.slider-2 {
+    display: flex;
+    height: 400px;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('img3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.slider-3 {
+    display: flex;
+    height: 400px;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('img4.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.slider-1-seprator {
+    height: 3px;
+    width: 200px;
+    margin-top: 3%;
+    background-color: white;
+    color: white;
+}
+.slider-1-heading {
+    height: 40px;
+    width: 400px;
+    text-align: center;
+    color: white;
+    margin-top: 3%;
+}
+h1 {
+    color: white;
+}
+.slider-1-paragraph {
+    /* height: 60px; */
+    margin-top: 3%;
+    width: 90%;
+    color: white;
+    text-align: center;
+}
+.custom-button {
+    padding: 5px 20px;
+    margin-top: 3%;
+    background-color: rgba(255, 255, 255, 0.3); 
+    color: #fff;
+    border: 2px solid #fff; 
+    border-radius: 5%;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+.custom-button:hover {
+    background-color: rgba(255, 255, 255, 0.5); 
+}
